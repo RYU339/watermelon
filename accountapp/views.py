@@ -4,4 +4,4 @@ from django.shortcuts import render
 # Create your views here.
 
 def tahlee(request):
-    return HttpResponse('Watermelon')
+    return render(request, 'base.html')
