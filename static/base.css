@@ -1,0 +1,18 @@
+.WM_header_logo{
+    margin: 2rem 0;
+    font-family: 'Staatliches', cursive;
+}
+
+.WM_header_button{
+    margin-bottom: 2rem;
+}
+
+.WM_footer_logo{
+    margin: 1rem 0;
+    font-family: 'Staatliches', cursive;"
+}
+
+.WM_footer_button{
+    margin: 2rem;
+    font-size: .6rem;
+}
