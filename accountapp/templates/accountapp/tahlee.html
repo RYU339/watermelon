@@ -7,9 +7,14 @@
             Cheetah Lee
         </h1>
 
-        <form action=""> {# 서버에 보내는 요청 명세서 #}
-
+        <form action="/account/tahlee/" method="post"> {# 서버에 보내는 요청 명세서 글, 파일 첨부와 같은 데이터들이 이 안에 다 들어가야 함 #}
+            {% csrf_token %} {# 장고를 이용해서 post method를 사용해서 서버에 요청하기 위해서는 이게 반드시 필요, 장고에서 제공하는 보안 기능들 중 하나 #}
+            <input type="submit" class="btn btn-primary" value="POST">
         </form>
+
+        <h1>
+            {{ text }} {# 이 데이터 이름을 명시해주게 되면 이 데이터 이름이 존재한다면 장고가 이거의 내용을 찾아서 보내게 됨 #}
+        </h1>
 
     </div>
 
