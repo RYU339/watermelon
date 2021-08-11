@@ -15,11 +15,10 @@
                        value="SEND">
         </form>
 
-        {% if tahlee_output %}
-        <h1>
-            {{ tahlee_output.text }}
-        </h1>
-        {% endif %}
+        {% for data in data_list %}
+            <h3>{{ data.text }}</h3>
+            {# 이 데이터 이름을 명시해주게 되면 이 데이터 이름이 존재할 때 장고가 이거의 내용을 찾아서 보내게 됨 #}
+        {% endfor %}
 
     </div>
 

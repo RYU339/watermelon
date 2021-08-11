@@ -1,6 +1,9 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
 # Create your views here.
+from django.urls import reverse
+
 from accountapp.models import NewModel
 
 
@@ -12,7 +15,8 @@ def tahlee(request):
         new_model.text = temp
         new_model.save()
 
-        return render(request, 'accountapp/tahlee.html', context={'tahlee_output': new_model})
+        return HttpResponseRedirect(reverse('accountapp:tahlee'))
     # CONTEXT = 맥락, 데이터 꾸러미, test: 이름, post method: 내용물 text를 html 안에 넣어서 보낼 것
     else:
-        return render(request, 'accountapp/tahlee.html', context={'text': 'GET METHOD'})
+        data_list = NewModel.objects.all()
+        return render(request, 'accountapp/tahlee.html', context={'data_list': data_list})
