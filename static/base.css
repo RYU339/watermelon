@@ -14,5 +14,10 @@
 
 .WM_footer_button{
     margin: 2rem;
-    font-size: .6rem;
+    font-size: .7rem;
+}
+
+.mw-500{
+    max-width: 500px;
+    padding: 1rem 1.5rem;
 }
