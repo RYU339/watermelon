@@ -15,4 +15,28 @@
     {#  DEFAULT CSS LINK  #}
     <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
 
+    {#  FONTS  #}
+    <style>
+        @font-face {
+            font-family: 'SCDream3';
+            src: local('SCDream3'),
+            url("{% static 'fonts/SCDream3.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'SCDream4';
+            src: local('SCDream4'),
+            url("{% static 'font/SCDream4.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'SCDream5';
+            src: local('SCDream5'),
+            url("{% static 'fonts/SCDream5.otf' %}") format("opentype");
+        }
+        @font-face {
+            font-family: 'SCDream6';
+            src: local('SCDream6'),
+            url("{% static 'fonts/SCDream6.otf' %}") format("opentype");
+        }
+    </style>
+
 </head>
